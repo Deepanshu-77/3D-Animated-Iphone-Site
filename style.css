@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #191719 ;
+    color: white;
+    
+
+}
+
+.container {
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+    color: white;
+    perspective: 1000px;
+}
+
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 25rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 20px 20px rgba(225,225,225,0.2), 0px 0px 50px rgba(225,225,225,0.2);
+    border-radius: 30px;
+    padding: 0rem 5rem;
+    background-color: #5b5b5b;
+    color: white;
+   
+    
+
+}
+
+.sneaker img {
+    width: 140px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    border-radius: 22px;
+    box-shadow: 0 20px 20px #2d192e;
+    transition: all 0.75s ease-out;
+   
+
+
+}
+.img2{
+    /* width: 17vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    box-shadow: 0 20px 20px #2d192e;
+    
+    z-index: 1; */
+    position: fixed;
+}
+.sneaker{
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.circle{
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(
+        to right, 
+        #ae4945,#3f2341
+    );
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+}
+.info{
+    transition: all 0.75s ease-out;
+}
+.info h1{
+    font-size: 3rem;
+    color: white;
+
+}
+.info h3{
+   font-size: 1.3rem;
+   padding: 2rem 0rem;
+   color: #585858;
+   font-weight: lighter;
+   color: white;
+}
+.sizes{
+    display: flex;
+    justify-content: space-between;
+}
+.sizes button{
+    padding: 0.7rem 2rem;
+    margin: 0 10px;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2)  ;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white ;
+    background-color: #655e57;
+}
+button.active{
+    background: #201f1f ;
+    color:white;
+}
+.purchase{
+    margin-top: 5rem;
+    transition: all 0.75s ease-out;
+}
+.purchase button{
+    width: 100%;
+    padding: 1rem 0rem;
+    border-radius: 30px ;
+    border: none;
+    background-color: #fa8238;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.75s ease-out;
+}
